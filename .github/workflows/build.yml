@@ -33,9 +33,15 @@ jobs:
         key: ${{ runner.os }}-sbt-cache-v2-${{ hashFiles('**/*.sbt') }}-${{ hashFiles('project/build.properties') }}
 
     - name: Test
-      run: sbt ++${{ matrix.scala }} clean coverage test "scalafixAll --check"
+      run: sbt ++${{ matrix.scala }} clean coverage test scalafmtCheckAll scalafmtSbtCheck "scalafixAll --check"
 
     - name: Coverage
       run: sbt ++${{ matrix.scala }} coverageReport
 
-    - uses: codecov/codecov-action@v1
+    - name: Send coverage report to codecov
+      uses: codecov/codecov-action@v1
+
+    - name: Send coverage report to codacy
+      uses: codacy/codacy-coverage-reporter-action@master
+      with:
+        project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
