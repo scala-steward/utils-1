@@ -82,7 +82,7 @@ object Dependencies {
     val testContainers                   = "org.testcontainers"             % "testcontainers"                         % "2.0.3"    % Test
     val testContainersMongodb            = "org.testcontainers"             % "mongodb"                                % "1.21.4"   % Test
     val testContainersRedis              = "com.redis"                      % "testcontainers-redis"                   % "2.2.4"    % Test
-    val typesafeConfig                   = "com.typesafe"                   % "config"                                 % "1.4.5"
+    val typesafeConfig                   = "com.typesafe"                   % "config"                                 % "1.4.6"
     val zioConfig                        = "dev.zio"                       %% "zio-config"                             % zioConfigV
     val zioConfigMagnolia                = "dev.zio"                       %% "zio-config-magnolia"                    % zioConfigV
     val zioConfigEnumeratum              = "dev.zio"                       %% "zio-config-enumeratum"                  % zioConfigV
