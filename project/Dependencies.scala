@@ -54,7 +54,7 @@ object Dependencies {
     val reactiveMongo                    = "org.reactivemongo"             %% "reactivemongo"                          % "1.1.0-pekko.RC19"
     val reactiveMongoBsonApi             = "org.reactivemongo"             %% "reactivemongo-bson-api"                 % reactivemongoV
     val redisson                         = "org.redisson"                   % "redisson"                               % "4.8.0"
-    val refined                          = "eu.timepit"                    %% "refined"                                % "0.11.3"
+    val refined                          = "eu.timepit"                    %% "refined"                                % "0.11.4"
     val scalaCollectionCompat            = "org.scala-lang.modules"        %% "scala-collection-compat"                % "2.14.0"
     val scalaJavaCompat                  = "org.scala-lang.modules"        %% "scala-java8-compat"                     % "1.0.2"
     val scalaJavaLocales                 = "io.github.cquiroz"             %% "scala-java-locales"                     % "1.5.4"
